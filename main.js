@@ -29,6 +29,7 @@ function getUserRepos(username) {
   const url = `https://api.github.com/users/${username}/repos`;
   const options = {
     headers: new Headers({
+      // for security purposes this auth code no longer works
       Authorization: "9d4d257276deb682054b6a4084dd911ce96b2b5f",
       "Content-Type": "application/vnd.github.v3+json",
     }),
